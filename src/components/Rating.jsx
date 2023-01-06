@@ -20,7 +20,7 @@ const Rating = () => {
       <div className='rounded-xl max-w-xl px-5 lg:w-1/4 md:w-1/2 grid  gap-5  bg-gradient-to-br from-dblue to-vdblue py-7'>
         <img src={star} alt="star" className='bg-dblue rounded-full p-3'/>
         <h1 className='text-3xl font-bold text-white'>How did we do?</h1>
-        <p className='text-mgray text-sm'>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <p className='text-mgray text-lg'>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
         <ul className='flex justify-between mb-4'>
             <li><Button n={1}/></li>
             <li><Button n={2}/></li>

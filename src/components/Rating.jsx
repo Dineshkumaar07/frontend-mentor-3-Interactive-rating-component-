@@ -9,14 +9,14 @@ const Rating = () => {
   const [rating, setRating] = useState("");
   const Button = ({n}) => {
     
-    const bstyle = "bg-dblue text-mgray h-9 w-9 rounded-full flex items-center justify-center hover:bg-mgray hover:text-white focus:bg-orange focus:text-white duration-150"
+    const bstyle = "bg-dblue text-mgray h-11 w-11 rounded-full flex items-center justify-center hover:bg-mgray hover:text-white focus:bg-orange focus:text-white duration-150"
     return (
       <button className={bstyle} onClick={ ()=>{setRating(n)} }>{n}</button>
     )
   }
   return (
     <div>
-      {!active &&     <div className='px-2 flex items-center justify-center  h-screen w-full font-overpass bg-vdblue'>
+      {!active &&     <div className='px-2 flex items-center justify-center  h-screen w-full font-overpass bg-vdblue overflow-hidden'>
       <div className='rounded-xl max-w-xl px-5 lg:w-1/4 md:w-1/2 grid  gap-5  bg-gradient-to-br from-dblue to-vdblue py-7'>
         <img src={star} alt="star" className='bg-dblue rounded-full p-3'/>
         <h1 className='text-3xl font-bold text-white'>How did we do?</h1>
